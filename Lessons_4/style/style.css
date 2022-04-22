@@ -1,0 +1,177 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1090px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header_li{
+    display: inline-block;
+    margin-right: 48px;
+}
+
+.header_li > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: black;
+    margin-top: 53px;
+}
+
+.header_ul{
+    text-align: center;
+}
+
+.header{
+    padding: 53px 0;
+}
+
+.bg_section{
+    padding: 130px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/img_1.png);
+}
+
+.bg_text{
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+    color: white;
+}
+
+.button_section{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    color: #162C38;
+    border-radius: 5px;
+    padding: 10px 122px;
+}
+
+.bg_color{
+    padding: 130px 0;
+    background-size: auto;
+    background-color: #1A6E88B5;
+}
+
+.bg_color_text{
+    max-width: 726px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: white;
+}
+
+.text_1{
+    padding: 221px 0;
+    max-width: 696px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.box{
+    width: 178px;
+    height: 121px;
+    background: #BFDEFB;
+    position: absolute;
+}
+
+.box_1{
+    top: 1259px;
+}
+
+.box_2{
+    top: 1505px;
+}
+
+.box_3{
+    top: 1394px;
+    right: 0px;
+}
+
+.text_2{
+    padding: 80px 0;
+    max-width: 696px;
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.ring_1{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #5C98AB;
+    position: absolute;
+    left: 305px;
+    top: 1786px;
+}
+
+.ring_2{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #BFDEFB;
+    position: absolute;
+    right: 200px;
+    top: 2001px;
+}
+
+.container_2{
+    max-width: 647px;
+    margin: 123px auto;
+}
+
+.input_holder, .input{
+    width: 100%;
+}
+
+.input_holder{
+    position: relative;
+    margin-bottom: 41px;
+}
+
+.input{
+    padding: 36px 0 12px 34px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 36px;
+    box-sizing: border-box;
+}
+
+.input::placeholder{
+    color: black;
+}
+
+.label{
+    position: absolute;
+    top: 14px;
+    left: 33px;  
+}
+
+.button_form{
+    font-weight: bold;
+    font-size: 36px;
+    background-color: #5C98AB;
+    color: white;
+    width: 100%;
+    padding: 21px 176px;
+    border: none;
+}
