@@ -1,0 +1,118 @@
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container__header, .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__header, .container__section{
+    margin: 25px auto;
+    max-width: 1219px;
+}
+
+.logo__img{
+    max-width: 41px;
+}
+
+.nav__li{
+    display: inline-block;
+}
+.nav__link{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    color:#B8BECD;
+    padding-right: 34px;
+}
+
+.nav__link:hover{
+    color: black;
+}
+
+.button__container-button{
+    box-sizing: border-box;
+    border: 1px solid #FB8F1D;
+    background: #FB8F1D;
+    color: white;
+    border-radius: 8px;
+    height: 44px;
+    width: 132px;
+}
+
+.button__container-button-transparent{
+    background: white;
+    color: #FB8F1D;
+    margin-right: 18px;
+}
+
+.button__container-button-green{
+    border: none;
+    background: #1ABE84;
+}
+
+.input__holder-style{
+    box-sizing: border-box;
+    width: 412px;
+    height: 59px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 20px 0 20px 28px;
+    margin: 12px 0;
+}
+
+.input__holder-style::placeholder{
+    color: black;
+}
+
+.text-h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    height: 140px;
+    width: 247px;
+    margin: 37px 0 73px;
+}
+
+.container__section, .container__section-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.background-img-style{
+    width: 261px;
+    height: 332px;
+    border-radius: 10px;
+    margin-left: 55px;
+    display: flex;
+    align-items: flex-end;
+} 
+
+.img-1{
+    background-image: url(../img/img-1.png);
+}
+
+.img-2{
+    background-image: url(../img/img-2.png);
+}
+
+.background-white-style{
+    background-color: white;
+    width: 152px;
+    height: 63px;
+    border-radius: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.lorem-style{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: auto;
+}
