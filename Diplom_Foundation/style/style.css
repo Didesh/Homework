@@ -126,10 +126,16 @@
 }
 
 .logo__img{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
     margin: 30px auto;
+}
+
+.logo__img-style{
+    margin: auto;
 }
 
 .block__with__quote{
@@ -242,7 +248,8 @@
     height: 300px;
     background: #ffffff;
     border-radius: 6px;
-    margin: auto;       
+    margin: auto;
+    transition: 1s       
 }
 
 .categories-bg{
@@ -273,7 +280,7 @@
     transition: 0.6s;
 }
 
-.grid{
+.gallery__grid{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -285,24 +292,24 @@
     padding: 90px;
 }
 
-.grid__section > .text-1{
+.gallery__grid-section > .text-1{
     font-weight:bold;
     font-size: 56px;
     text-align: center;
 }
 
-.grid__section > .text-2{
+.gallery__grid-section > .text-2{
     font-size: 24px;
     max-width: 554px;
     padding: 26px;
     text-align: center;
 }
 
-.grid__section:nth-child(1){
+.gallery__grid-section:nth-child(1){
     grid-column: span 3;
 }
 
-.grid__section:nth-child(4), .grid__section:nth-child(5){
+.gallery__grid-section:nth-child(4), .gallery__grid-section:nth-child(5){
     grid-row: span 2;
 }
 
@@ -352,22 +359,25 @@
         grid-column: span 2;
     }
 
-    .grid{
+    .gallery__grid{
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        justify-items: center;
+        align-items: center;
         max-width: 740px;
         padding: 10px;
     }
 
-    .grid__section:nth-child(3){
+    .gallery__grid-section:nth-child(3){
         display: none;
     }
 
-    .grid__section:nth-child(1){
+    .gallery__grid-section:nth-child(1){
         grid-column: span 2;
     }
     
-    .grid__section:nth-child(4), .grid__section:nth-child(5){
+    .gallery__grid-section:nth-child(4), .gallery__grid-section:nth-child(5){
         grid-row: span 2;
     }
 }
@@ -384,9 +394,12 @@
     }
 
     .logo__img{
-        max-width: 620px;
-        padding: 30px;
-        margin: 10px auto;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
     }
 
     .block__with__quote{
@@ -419,10 +432,6 @@
     }
 
     .what__is__it-item {
-        padding: 20px;
-    }
-
-    .logo__img{
         padding: 20px;
     }
 
@@ -468,24 +477,26 @@
         grid-column: span 1;
     }
 
-    .grid{
+    .gallery__grid{
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
         padding: 10px;
     }
 
-    .grid__section:nth-child(3){
+    .gallery__grid-section:nth-child(3){
         display: none;
     }
 
-    .grid__section > .text-2 {
+    .gallery__grid-section > .text-2 {
         max-width: 554px;
     }
-    .grid__section:nth-child(1){
+    .gallery__grid-section:nth-child(1){
         grid-column: span 1;
     }
     
-    .grid__section:nth-child(4), .grid__section:nth-child(5){
+    .gallery__grid-section:nth-child(4), .gallery__grid-section:nth-child(5){
         grid-row: span 2;
     }
 }
@@ -493,10 +504,6 @@
 @media (max-width: 550px){
     .container{
         max-width: 440px;
-    }
-
-    .logo__img{
-        padding: 10px;
     }
 
     .info{
@@ -507,7 +514,7 @@
         padding-bottom: 15px;
     }
 
-    .grid{
+    .gallery__grid{
         gap: 5px;
     }
 }
@@ -515,6 +522,10 @@
 @media (max-width: 360px){
     .container{
         max-width: 290px;
+    }
+
+    .logo__img-style > img{
+        max-width: 88px;
     }
 
     .what__is__it-item {
@@ -545,15 +556,15 @@
         margin-left: 0;
     }
 
-    .grid__section{
-        width: 100%;
+    .gallery__grid-section > img{
+        width: 95%;
     }
 
-    .grid__section > .text-1{
+    .gallery__grid-section > .text-1{
         font-size: 40px;
     }
     
-    .grid__section > .text-2{
+    .gallery__grid-section > .text-2{
         font-size: 24px;
         padding: 5px;
     }
