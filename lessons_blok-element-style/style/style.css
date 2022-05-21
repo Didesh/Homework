@@ -18,10 +18,10 @@
     max-width: 41px;
 }
 
-.nav__li{
+.menu__nav__li{
     display: inline-block;
 }
-.nav__link{
+.menu__nav__link{
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -29,7 +29,7 @@
     padding-right: 34px;
 }
 
-.nav__link:hover{
+.menu__nav__link:hover{
     color: black;
 }
 
