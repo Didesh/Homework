@@ -62,6 +62,26 @@
     margin-left: 75px;
 }
 
+.check{
+    width: 40px;
+    height: 4px;
+    background-color: black;
+    border-radius: 25%;
+    transition: 500ms linear;
+}
+
+.check:not(:last-of-type){
+    margin-bottom: 8px;
+}
+
+.check:first-child{
+    margin-top: 4px;
+}
+
+.checkbox, .check__menu{
+    display: none;
+}
+
 .button{
     border: none;
     font-weight: bold;
@@ -591,10 +611,6 @@ a{
 }
 
 @media (max-width: 1200px){
-    .header-style{
-        display: none;
-    }
-
     .container{
         max-width: 1040px;
     }
@@ -677,6 +693,73 @@ a{
         justify-content: center;
         align-items: center;
         margin: 20px auto;
+    }
+
+    .checkbox, .check__menu{
+        display: block;
+    }
+
+    .check__menu{
+        z-index: 2;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .checkbox{
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        opacity: 0;
+        z-index: 3;
+    }
+
+    .checkbox:checked ~ .check__menu > .check:first-child{
+        transform: rotate(45deg) translate(11px, 3px);
+    }
+
+    .checkbox:checked ~ .check__menu > .check:last-child{
+        transform: rotate(-45deg) translate(5px, 3px);
+    }
+
+    .checkbox:checked ~ .check__menu > .check:nth-child(2){
+        display: none;
+    }
+
+    .checkbox:checked ~ .header__nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F3C6BD;
+    }
+
+    .header__nav{
+        text-align: center;
+    }
+
+    .header__li{
+        display: block;
+    }
+
+    .header__nav:first-of-type{
+      margin-top: 30px;
+    }
+
+    .header__li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .header__nav > div {
+        margin-left: 0;
+    }
+
+    .button__blue{
+        margin-top: 10px;
     }
 
     .quote-section {
@@ -904,6 +987,35 @@ a{
 
     .block__with__categories {
         gap: 0;
+    }
+
+    .cta__animation-text {
+        max-width: 290px;
+    }
+
+    .cta-input {
+        width: 290px;
+    }
+
+    .footer__text {
+        width: 290px;
+    }
+
+    .block__with__quote__animations > img{
+        width: 100%;
+    }
+
+    .block__with__featires__animation > img{
+        width: 70%;
+    }
+
+    .footer__info {
+        width: 340px;
+        justify-content: center;
+    }
+
+    .footer__info > :last-child{
+        margin-top: 20px;
     }
 }
 
